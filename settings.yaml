@@ -1,0 +1,13 @@
+client_config_backend: settings
+client_config:
+  client_id: #client id from google -> xxx.apps.googleusercontent.com
+  client_secret: #client secret from google -> xxx
+
+save_credentials: True
+save_credentials_backend: file
+save_credentials_file: credentials.json
+
+get_refresh_token: True
+
+oauth_scope: #https://developers.google.com/drive/v2/web/about-auth
+  - https://www.googleapis.com/auth/drive.file #Per-file access to files created or opened by the app
